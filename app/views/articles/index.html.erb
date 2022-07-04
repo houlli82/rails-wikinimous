@@ -1,9 +1,9 @@
 <h1>wikinimous</h1>
-<h2><%= link_to 'New article', '/articles/new' %></h2>
+<h5><%= link_to 'New article', '/articles/new' %></h5>
 
 <% @articles.each_with_index do |article, index| %>
-  <ul>
-    <li><%= link_to article.title, article_path(article) %></li>
+  <ul class="list-group">
+    <li class="list-group-item"><%= link_to article.title, article_path(article) %></li>
   </ul>
 
 <% end %>
